@@ -1,1 +1,29 @@
 
+name: Build and Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install C++
+      run: sudo apt-get update
+
+    - name: Compile
+      run: g++ fleet_simulator.cpp -o fleet_simulator
+
+    - name: Run Simulation
+      run: ./fleet_simulator
+
+    - name: Install Python Packages
+      run: pip install pandas
+
+    - name: Run Analytics
+      run: python fleet_analytics.py
