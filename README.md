@@ -1,3 +1,7 @@
+![C++](https://img.shields.io/badge/C++-Programming-blue)
+![Python](https://img.shields.io/badge/Python-Analytics-green)
+![Mining](https://img.shields.io/badge/Mining-Autonomous%20Operations-orange)
+
 🚜 Autonomous Mining Fleet Simulator
 
 A C++ and Python project demonstrating autonomous haul truck fleet monitoring, telemetry collection, operational analytics, and safety-state management inspired by modern mining autonomy systems.
